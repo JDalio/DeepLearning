@@ -60,7 +60,7 @@ def Linear_regression():
     print('initial variables:\n initial_b = {0}\n intial_m = {1}\n error of begin = {2} \n' \
           .format(initial_b, initial_m, error(initial_b, initial_m, data)))
 
-    # optimizing b and m
+    # optimize b and m
     [b, m] = optimizer(data, initial_b, initial_m, learning_rate, num_iter)
 
     # print final b m error
