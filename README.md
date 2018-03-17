@@ -1,1 +1,1 @@
-jhz's path to deep learning
+Dalio's path to deep learning
