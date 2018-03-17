@@ -67,7 +67,6 @@ def Linear_regression():
     print(
         'final formula parmaters:\n b = {1}\n m={2}\n error of end = {3} \n'.format(num_iter, b, m, error(b, m, data)))
 
-    # plot result
     plot_data(data, b, m)
 
 
