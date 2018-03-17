@@ -2,7 +2,7 @@ import numpy as np
 import pylab
 
 
-# 计算拟合的m,b的误差
+# 计算每次拟合的m,b的误差
 def error(b, m, data):
     x = data[:, 0]
     y = data[:, 1]
