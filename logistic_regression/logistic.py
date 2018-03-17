@@ -68,7 +68,6 @@ train_x, train_y = loadData()
 ## step 2： training
 opts = {'alpha': 0.001, 'maxIter': 4000, 'optimizeType': 'GradDescent'}
 res = trainLogRegres(train_x, train_y, opts)
-# print(res[0].shape)
 
 ## step 3: testing
 accuracy = testLogRegres(res, train_x, train_y)
