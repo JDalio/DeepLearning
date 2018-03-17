@@ -16,11 +16,11 @@ def initialize_with_zeros(dim):
 def propagate(w, b, X, Y):
     m = X.shape[1]
 
-    # FORWARD PROPAGATION
+    ## FORWARD PROPAGATION
     A = sigmoid(np.dot(w.T, X) + b)
     cost = (-1 / m) * np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A))
 
-    # BACKWARD PROPAGATION
+    ## BACKWARD PROPAGATION
     dw = (1 / m) * np.dot(X, (A - Y).T)
     db = (1 / m) * np.sum(A - Y)
 
