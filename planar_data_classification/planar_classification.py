@@ -1,10 +1,6 @@
 import numpy as np
 import pylab as plt
-import sklearn
-import sklearn
-import sklearn.datasets
-import sklearn.linear_model
-from testCases import *
+
 from planar_utils import plot_decision_boundary, sigmoid, load_planar_dataset, load_extra_datasets
 
 
