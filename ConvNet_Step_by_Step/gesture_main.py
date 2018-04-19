@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.python.framework import ops
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from cnn_utils import *
 
 
@@ -53,7 +55,7 @@ def forward_propagation(X, parameters):
 
 
 def compute_cost(Z3, Y):
-    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=Z3, labels=Y))
+    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits=Z3, labels=Y))
     return cost
 
 
